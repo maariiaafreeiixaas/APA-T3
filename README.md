@@ -76,6 +76,8 @@ Inserte a continuación una captura de pantalla que muestre el resultado de ejec
 fichero `algebra/vectores.py` con la opción *verbosa*, de manera que se muestre el
 resultado de la ejecución de los tests unitarios.
 
+![alt text](image.png)
+
 #### Código desarrollado
 
 Inserte a continuación el código de los métodos desarrollados en esta tarea, usando los
@@ -91,6 +93,8 @@ vale insertar una imagen o una captura de pantalla, debe hacerse en formato *mar
 
     #para cumplir con los requisitos de la entrega y codigo, solo voy a implementar los constructores:
 
+    def __init__(self, valores):
+      self.vector = list(valores)
 
     def __repr__(self):
         """

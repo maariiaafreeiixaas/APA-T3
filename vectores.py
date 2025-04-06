@@ -12,6 +12,9 @@ class Vector:
 
     #para cumplir con los requisitos de la entrega y codigo, solo voy a implementar los constructores:
 
+    def __init__(self, valores):
+        self.vector = list(valores)
+
     def __repr__(self):
         """
         Representación del vector que permite construir uno nuevo idéntico.
