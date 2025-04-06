@@ -91,11 +91,6 @@ vale insertar una imagen o una captura de pantalla, debe hacerse en formato *mar
 
     #para cumplir con los requisitos de la entrega y codigo, solo voy a implementar los constructores:
 
-    def __init__(self, iterable):
-       
-        self.vector = [valor for valor in iterable]
-
-        return None   
 
     def __repr__(self):
         """
@@ -131,6 +126,14 @@ vale insertar una imagen o una captura de pantalla, debe hacerse en formato *mar
         """
 
         return -(-self + other)
+
+    #al hacer los test unitarios he visto que se repetia el mismo error: 'Vector' object is not iterable
+    #para solucionarlo he implementado este metodo:
+    def __iter__(self):
+        """
+        Permite iterar sobre las componentes del vector.
+        """
+        return iter(self.vector)
 
 
 
